@@ -1,0 +1,2 @@
+sudo dnf install podman podman-docker docker-compose podman-compose
+systemctl --user enable podman.socket --now

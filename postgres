@@ -1,0 +1,18 @@
+sudo dnf install postgresql-server postgresql-contrib
+sudo systemctl enable postgresql
+sudo postgresql-setup --initdb --unit postgresql
+sudo systemctl start postgresql
+
+
+sudo -u postgres psql
+postgres=# CREATE USER lenny WITH PASSWORD 'leonard';
+postgres=# CREATE DATABASE my_project OWNER lenny;
+postgres=# \password postgres
+postgres=# \q
+
+psql my_project
+
+
+sudo vim /var/lib/pgsql/data/pg_hba.conf
+change host all all 127.0.0.1/32 ident to host all all 127.0.0.1/32 md5
+change host all all ::1/128 ident to host all all ::1/128 md5

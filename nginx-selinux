@@ -1,0 +1,6 @@
+sudo chown -R root:nginx /usr/share/nginx/html
+sudo find /usr/share/nginx/html -type d -exec chmod 750 {} \;
+sudo find /usr/share/nginx/html -type f -exec chmod 640 {} \;
+sudo chcon -R system_u:object_r:httpd_sys_content_t:s0 /usr/share/nginx/html
+sudo semanage fcontext -a -t httpd_sys_content_t "/usr/share/nginx/html(/.*)?"
+sudo restorecon -rv /usr/share/nginx/html

@@ -1,0 +1,11 @@
+firewall-cmd --get-zones
+firewall-cmd --get-default-zone
+ip link show
+sudo firewall-cmd --permanent --zone=drop --change-interface=eth0
+sudo firewall-cmd --permanent --zone=drop --change-interface=[interface2]
+sudo firewall-cmd --permanent --zone=drop --add-service=http
+sudo firewall-cmd --permanent --zone=drop --add-port=80/tcp
+sudo firewall-cmd --set-default-zone=drop
+firewall-cmd --zone=drop --list-all
+sudo firewall-cmd --reload
+

@@ -1,0 +1,14 @@
+sudo dnf remove kpat kmahjongg kmines kde-connect kde-connect-libs kaddressbook kaddressbook-libs kmail kmail-libs kmailtransport akregator akregator-libs virtualbox-guest-additions kolourpaint kolourpaint-libs skanpage libreoffice-* kdeconnectd krdc krdc-libs krfb krfb-libs ktnef qrca dragon kamoso kmouth firewall-config kdebugsettings mediawriter fedora-bookmarks plasma-welcome-fedora toolbox
+
+
+sudo dnf install pavucontrol-qt mpv telegram-desktop unrar android-tools wget curl aria2 git vim nano kate ripgrep fzf libheif libheif-freeworl htop obs-studio intel-media-driver python3-idle python3-tkinter fuse-libs ffmpegthumbs kcolorchooser kasts vim-enhanced qbittorrent libva libva-utils php-cli hexedit tmux CFR nginx qt5-qttools crow-translate tor torsocks obfs4 make konversation bat lsd tldr setools-console HandBrake-gui sysstat chromium
+
+# fonts
+sudo dnf install intel-one-mono-fonts google-noto-color-emoji-fonts adwaita-sans-fonts adwaita-fonts-all adwaita-mono-fonts jetbrains-mono-fonts jetbrains-mono-fonts-all jetbrains-mono-nl-fonts vazirmatn-* rsms-inter-fonts rsms-inter-vf-fonts source-foundry-hack-fonts
+
+
+# c/c++
+sudo dnf install clang-tools-extra clang gcc gcc-c++ bear
+
+# powerline
+sudo dnf install powerline-fonts vim-powerline powerline
