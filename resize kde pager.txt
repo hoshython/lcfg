@@ -1,0 +1,7 @@
+sudo cp /usr/share/plasma/plasmoids/org.kde.plasma.pager/contents/ui/main.qml /usr/share/plasma/plasmoids/org.kde.plasma.pager/contents/ui/main.qml_backup
+
+sudo nano  /usr/share/plasma/plasmoids/org.kde.plasma.pager/contents/ui/main.qml
+
+property int columnWidth: Math.floor(rowHeight * pagerItemSizeRatio) => property int columnWidth: Math.floor(rowHeight * pagerItemSizeRatio) / 2
+
+Layout.minimumWidth: !root.vertical ? Math.floor(height * aspectRatio) : 1 => Layout.minimumWidth: !root.vertical ? Math.floor(height * aspectRatio / 2) : 1
